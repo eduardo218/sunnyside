@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+.container header {
+  height: 800px;
+  background-image: url("/images/desktop/image-header.jpg");
+  background-size: cover;
+}
+.container header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 135px;
+  padding-inline: 40px;
+}
+.container header nav .logo img {
+  width: 170px;
+}
+.container header nav .navbar-links ul {
+  display: flex;
+}
+.container header nav .navbar-links ul li {
+  margin-left: 50px;
+}
+.container header nav .navbar-links ul li a {
+  color: hsl(0deg, 0%, 100%);
+}
+.container header nav .navbar-links ul li a.contact-button {
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  color: #000;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 20px 30px;
+  border-radius: 44px;
+}
+.container header nav .navbar-links ul li a.contact-button:hover {
+  background-color: #6fcffd;
+  color: hsl(0deg, 0%, 100%);
+}
+.container header .header-banner {
+  margin: 70px;
+  text-align: center;
+}
+.container header .header-banner h1 {
+  font-family: "Fraunces", serif;
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-weight: 900;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 100px;
+}/*# sourceMappingURL=main.css.map */
