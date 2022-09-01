@@ -99,9 +99,133 @@ header .header-banner h1 {
   text-transform: uppercase;
   font-family: "Fraunces", serif;
   color: hsl(212deg, 27%, 19%);
-  border-bottom: 5px solid hsl(51deg, 100%, 49%);
+  border-bottom: 5px solid #ffef94;
 }
 .section-1 .section-1-right {
   background-image: url("/images/desktop/image-transform.jpg");
   background-size: cover;
+}
+
+.section-2 {
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.section-2 .section-2-left {
+  background-image: url("/images/desktop/image-stand-out.jpg");
+  background-size: cover;
+}
+.section-2 .section-2-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 150px;
+  padding: 130px;
+  gap: 50px;
+}
+.section-2 .section-2-right h2 {
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: hsl(212deg, 27%, 19%);
+}
+.section-2 .section-2-right p {
+  color: hsl(232deg, 10%, 55%);
+}
+.section-2 .section-2-right a {
+  display: inline;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 27%, 19%);
+  border-bottom: 5px solid #ffd2cc;
+}
+
+.section-3 {
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.section-3 .section-3-left {
+  background-image: url("/images/desktop/image-graphic-design.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 60px 170px;
+  gap: 30px;
+}
+.section-3 .section-3-left h2 {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  color: hsl(167deg, 40%, 24%);
+}
+.section-3 .section-3-left p {
+  color: hsl(168deg, 34%, 41%);
+  text-align: center;
+}
+.section-3 .section-3-right {
+  background-image: url("/images/desktop/image-photography.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 60px 170px;
+  gap: 30px;
+}
+.section-3 .section-3-right h2 {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  color: hsl(212deg, 27%, 19%);
+}
+.section-3 .section-3-right p {
+  color: hsl(198deg, 62%, 26%);
+  text-align: center;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 165px;
+}
+.testimonials h2 {
+  font-family: "Fraunces", serif;
+  font-size: 20px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: hsl(210deg, 4%, 67%);
+}
+.testimonials .testimonial-cards {
+  margin-top: 85px;
+  display: flex;
+  gap: 40px;
+}
+.testimonials .testimonial-cards .card {
+  max-width: 330px;
+  text-align: center;
+}
+.testimonials .testimonial-cards .card img {
+  width: 75px;
+  border-radius: 50%;
+  margin-bottom: 65px;
+}
+.testimonials .testimonial-cards .card p {
+  margin-bottom: 80px;
+  color: hsl(232deg, 10%, 55%);
+  line-height: 30px;
+}
+.testimonials .testimonial-cards .card .name {
+  display: block;
+  font-size: 1.3rem;
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 27%, 19%);
+  margin-bottom: 20px;
+}
+.testimonials .testimonial-cards .card .position {
+  display: block;
+  color: hsl(210deg, 4%, 67%);
 }/*# sourceMappingURL=main.css.map */
