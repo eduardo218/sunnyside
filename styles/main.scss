@@ -3,67 +3,109 @@
 
 .container {
     max-width: 1440px;
-    margin: auto;
+    margin: auto;    
+}
 
-    header {
-        height: 800px;
-        background-image: url('/images/desktop/image-header.jpg');
-        background-size: cover;
+header {
+    height: 800px;
+    background-image: url('/images/desktop/image-header.jpg');
+    background-size: cover;
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 135px;
-            padding-inline: 40px;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 135px;
+        padding-inline: 40px;
 
-            .logo img {
-                width: 170px;
-            }
+        .logo img {
+            width: 170px;
+        }
 
-            .navbar-links {
-                ul {
-                    display: flex;
+        .navbar-links {
+            ul {
+                display: flex;
 
-                    li {
-                        margin-left: 50px;
+                li {
+                    margin-left: 50px;
 
-                        a {
+                    a {
+                        color: $white;
+                    }
+
+                    a.contact-button {
+                        text-transform: uppercase;
+                        font-family: $fraunces;
+                        color: #000;
+                        background-color: $white;
+
+                        padding: 20px 30px;
+                        border-radius: 44px;
+
+                        &:hover {
+                            background-color: #6fcffd;
                             color: $white;
-                        }
-
-                        a.contact-button {
-                            text-transform: uppercase;
-                            font-family: $fraunces;
-                            color: #000;
-                            background-color: $white;
-
-                            padding: 20px 30px;
-                            border-radius: 44px;
-
-                            &:hover {
-                                background-color: #6fcffd;
-                                color: $white;
-                            }
                         }
                     }
                 }
             }
         }
+    }
 
-        .header-banner {
-            margin: 70px;
-            text-align: center;
+    .header-banner {
+        margin: 70px;
+        text-align: center;
 
-            h1 {
-                font-family: $fraunces;
-                font-size: 60px;
-                letter-spacing: 10px;
-                font-weight: 900;
-                color: $white;
+        h1 {
+            font-family: $fraunces;
+            font-size: 60px;
+            letter-spacing: 10px;
+            font-weight: 900;
+            color: $white;
 
-                margin-bottom: 100px;
-            }
+            margin-bottom: 100px;
         }
+    }
+}
+
+.section-1 {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .section-1-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 150px;
+        padding: 130px;
+        gap: 50px;
+
+        h2 {
+            font-family: $fraunces;
+            font-size: 40px;
+            font-weight: bold;
+
+            color: $very-dark-desaturated-blue;
+        }
+
+        p {
+            color: $dark-grayish-blue;
+        }
+
+        a{
+            display: inline;
+            text-transform: uppercase;
+            font-family: $fraunces;
+
+            color: $very-dark-desaturated-blue;
+            border-bottom: 5px solid $yellow;
+        }
+    }
+
+    .section-1-right {
+        background-image: url('/images/desktop/image-transform.jpg');
+        background-size: cover;
     }
 }

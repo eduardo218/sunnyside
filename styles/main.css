@@ -21,31 +21,32 @@ a {
   max-width: 1440px;
   margin: auto;
 }
-.container header {
+
+header {
   height: 800px;
   background-image: url("/images/desktop/image-header.jpg");
   background-size: cover;
 }
-.container header nav {
+header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 135px;
   padding-inline: 40px;
 }
-.container header nav .logo img {
+header nav .logo img {
   width: 170px;
 }
-.container header nav .navbar-links ul {
+header nav .navbar-links ul {
   display: flex;
 }
-.container header nav .navbar-links ul li {
+header nav .navbar-links ul li {
   margin-left: 50px;
 }
-.container header nav .navbar-links ul li a {
+header nav .navbar-links ul li a {
   color: hsl(0deg, 0%, 100%);
 }
-.container header nav .navbar-links ul li a.contact-button {
+header nav .navbar-links ul li a.contact-button {
   text-transform: uppercase;
   font-family: "Fraunces", serif;
   color: #000;
@@ -53,19 +54,54 @@ a {
   padding: 20px 30px;
   border-radius: 44px;
 }
-.container header nav .navbar-links ul li a.contact-button:hover {
+header nav .navbar-links ul li a.contact-button:hover {
   background-color: #6fcffd;
   color: hsl(0deg, 0%, 100%);
 }
-.container header .header-banner {
+header .header-banner {
   margin: 70px;
   text-align: center;
 }
-.container header .header-banner h1 {
+header .header-banner h1 {
   font-family: "Fraunces", serif;
   font-size: 60px;
   letter-spacing: 10px;
   font-weight: 900;
   color: hsl(0deg, 0%, 100%);
   margin-bottom: 100px;
+}
+
+.section-1 {
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.section-1 .section-1-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 150px;
+  padding: 130px;
+  gap: 50px;
+}
+.section-1 .section-1-left h2 {
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: hsl(212deg, 27%, 19%);
+}
+.section-1 .section-1-left p {
+  color: hsl(232deg, 10%, 55%);
+}
+.section-1 .section-1-left a {
+  display: inline;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 27%, 19%);
+  border-bottom: 5px solid hsl(51deg, 100%, 49%);
+}
+.section-1 .section-1-right {
+  background-image: url("/images/desktop/image-transform.jpg");
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */
