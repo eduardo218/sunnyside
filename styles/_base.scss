@@ -11,6 +11,15 @@ body {
     font-size: 18px;
 }
 
+.container {
+    max-width: 1440px;
+    margin: auto;  
+    
+    @media (max-width: 375px) {
+        max-width: 375px;
+    }
+}
+
 ul {
     list-style: none;
 }
