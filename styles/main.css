@@ -99,7 +99,10 @@ header .header-banner h1 {
   text-transform: uppercase;
   font-family: "Fraunces", serif;
   color: hsl(212deg, 27%, 19%);
-  border-bottom: 5px solid #ffef94;
+  border-bottom: 7px solid #ffef94;
+}
+.section-1 .section-1-left a:hover {
+  border-bottom: 7px solid hsl(51deg, 100%, 49%);
 }
 .section-1 .section-1-right {
   background-image: url("/images/desktop/image-transform.jpg");
@@ -138,7 +141,10 @@ header .header-banner h1 {
   text-transform: uppercase;
   font-family: "Fraunces", serif;
   color: hsl(212deg, 27%, 19%);
-  border-bottom: 5px solid #ffd2cc;
+  border-bottom: 7px solid #ffd2cc;
+}
+.section-2 .section-2-right a:hover {
+  border-bottom: 7px solid hsl(7deg, 99%, 70%);
 }
 
 .section-3 {
@@ -228,4 +234,52 @@ header .header-banner h1 {
 .testimonials .testimonial-cards .card .position {
   display: block;
   color: hsl(210deg, 4%, 67%);
+}
+
+.image-galery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+.image-galery img {
+  width: 100%;
+}
+
+footer {
+  background-color: #8bc6ba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-container {
+  margin-block: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-container h2 {
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  color: hsl(167deg, 40%, 24%);
+  margin-bottom: 50px;
+}
+footer .footer-container .links {
+  margin-bottom: 90px;
+}
+footer .footer-container .links ul {
+  display: flex;
+  gap: 60px;
+}
+footer .footer-container .links ul li a {
+  color: hsl(168deg, 34%, 41%);
+}
+footer .footer-container .links ul li a:hover {
+  color: hsl(0deg, 0%, 100%);
+}
+footer .footer-container .social-media ul {
+  display: flex;
+  gap: 25px;
+}
+footer .footer-container .social-media ul li a:hover svg path {
+  fill: hsl(0deg, 0%, 100%);
 }/*# sourceMappingURL=main.css.map */

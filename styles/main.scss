@@ -100,7 +100,11 @@ header {
             font-family: $fraunces;
 
             color: $very-dark-desaturated-blue;
-            border-bottom: 5px solid lighten($color: $yellow, $amount: 30);
+            border-bottom: 7px solid lighten($color: $yellow, $amount: 30);
+
+            &:hover {
+                border-bottom: 7px solid $yellow;
+            }
         }
     }
 
@@ -147,7 +151,11 @@ header {
             font-family: $fraunces;
 
             color: $very-dark-desaturated-blue;
-            border-bottom: 5px solid lighten($color: $soft-red, $amount: 20)
+            border-bottom: 7px solid lighten($color: $soft-red, $amount: 20);
+
+            &:hover {
+                border-bottom: 7px solid $soft-red;
+            }
         }
     }
     
@@ -255,6 +263,65 @@ header {
             .position {
                 display: block;
                 color: $grayish-blue;
+            }
+        }
+    }
+}
+
+.image-galery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+
+    img {
+        width: 100%;
+    }
+}
+
+footer{
+    background-color: lighten($color: $dark-moderate-cyan, $amount: 25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer-container {
+        margin-block: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-family: $fraunces;
+            font-size: 40px;
+            color: $dark-desaturated-cyan;
+
+            margin-bottom: 50px;
+        }
+
+        .links {
+            margin-bottom: 90px;
+            ul{
+                display: flex;
+                gap: 60px;
+
+                li a{
+                    color: $dark-moderate-cyan;
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .social-media {
+            ul {
+                display: flex;
+                gap: 25px;
+
+                li a:hover svg path {
+                    fill: $white;
+                }
             }
         }
     }
