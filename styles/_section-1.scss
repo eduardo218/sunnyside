@@ -40,18 +40,24 @@
 
     .section-1-right {
         background-image: url('/images/desktop/image-transform.jpg');
+        background-position: center;
         background-size: cover;
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 1024px) {
+        .section-1-left {
+            padding: 25px;
+            margin-block: 50px;
+        }
+    }
+
+    @media (max-width: 768px) {
         height: auto;
         grid-template-columns: 1fr;
 
         .section-1-left {
             text-align: center;
-            align-items: center;
-            padding: 25px;
-            margin-block: 50px;
+            align-items: center;        
 
             gap: 30px;
             order: 1;
@@ -62,9 +68,14 @@
         }
 
         .section-1-right {
-            background-image: url('/images/mobile/image-transform.jpg');
             height: 315px;
             order: 0;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .section-1-right {
+            background-image: url('/images/mobile/image-transform.jpg');
         }
     }
 }

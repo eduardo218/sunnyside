@@ -16,7 +16,8 @@
 
     .testimonial-cards {
         margin-top: 85px;
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 40px;
 
         .card {
@@ -51,6 +52,18 @@
         }
     }
 
+    @media (max-width: 1024px) {
+        .testimonial-cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .testimonial-cards {
+            grid-template-columns: 1fr;
+        }
+    }
+
     @media (max-width: 375px) {
         padding-block: 70px;
 
@@ -62,8 +75,6 @@
         }
 
         .testimonial-cards {
-            flex-direction: column;
-
             .card {
                 margin-bottom: 40px;
                 img {

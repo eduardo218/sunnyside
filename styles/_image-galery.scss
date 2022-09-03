@@ -7,10 +7,11 @@
     .cone, .sugar {
         height: 450px;
         background-size: cover;
+        background-position: center;
     }
 
     .milk {
-        background-image: url('../images/desktop/image-gallery-milkbottles.jpg');
+        background-image: url('../images/desktop/image-gallery-milkbottles.jpg');        
     }
 
     .orange {
@@ -29,8 +30,18 @@
         width: 100%;
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 1024px) {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 768px) {
+        .milk, .orange,
+        .cone, .sugar {
+            height: 300px;
+        }
+    }
+
+    @media (max-width: 375px) {        
 
         .milk, .orange,
         .cone, .sugar {

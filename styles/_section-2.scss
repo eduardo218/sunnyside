@@ -6,6 +6,7 @@
     .section-2-left {
         background-image: url('/images/desktop/image-stand-out.jpg');
         background-size: cover;
+        background-position: center;
     }
 
     .section-2-right {
@@ -43,15 +44,20 @@
         }
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 1024px) {
+        .section-2-right {
+            padding: 25px;
+            margin-block: 50px;
+        }
+    }
+
+    @media (max-width: 768px) {
         height: auto;
         grid-template-columns: 1fr;
 
         .section-2-right {
             text-align: center;
             align-items: center;
-            padding: 25px;
-            margin-block: 50px;
             gap: 30px;
 
             h2 {
@@ -59,9 +65,14 @@
             }
         }
 
+        .section-2-left {            
+            height: 315px;
+        }
+    }
+
+    @media (max-width: 375px) {
         .section-2-left {
             background-image: url('/images/mobile/image-stand-out.jpg');
-            height: 315px;
         }
     }
     

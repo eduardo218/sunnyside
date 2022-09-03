@@ -31,6 +31,7 @@ header {
   height: 800px;
   background-image: url("/images/desktop/image-header.jpg");
   background-size: cover;
+  background-position: center;
 }
 header nav {
   display: flex;
@@ -75,11 +76,7 @@ header .header-banner h1 {
   color: hsl(0deg, 0%, 100%);
   margin-bottom: 100px;
 }
-@media (max-width: 375px) {
-  header {
-    height: 540px;
-    background-image: url("/images/mobile/image-header.jpg");
-  }
+@media (max-width: 768px) {
   header nav {
     height: 85px;
     padding-inline: 25px;
@@ -89,6 +86,7 @@ header .header-banner h1 {
   }
   header nav .menu-icon {
     display: block;
+    cursor: pointer;
   }
   header nav #navbar-links.hide {
     display: none;
@@ -139,14 +137,20 @@ header .header-banner h1 {
     background-color: #6fcffd;
     color: hsl(0deg, 0%, 100%);
   }
+  header .header-banner {
+    margin-top: 60px;
+    margin-inline: 0;
+  }
+  header .header-banner h1 {
+    font-size: 35px;
+    margin-bottom: 60px;
+  }
 }
-header .header-banner {
-  margin-top: 60px;
-  margin-inline: 0;
-}
-header .header-banner h1 {
-  font-size: 35px;
-  margin-bottom: 60px;
+@media (max-width: 375px) {
+  header {
+    height: 540px;
+    background-image: url("/images/mobile/image-header.jpg");
+  }
 }
 
 .section-1 {
@@ -184,9 +188,16 @@ header .header-banner h1 {
 }
 .section-1 .section-1-right {
   background-image: url("/images/desktop/image-transform.jpg");
+  background-position: center;
   background-size: cover;
 }
-@media (max-width: 375px) {
+@media (max-width: 1024px) {
+  .section-1 .section-1-left {
+    padding: 25px;
+    margin-block: 50px;
+  }
+}
+@media (max-width: 768px) {
   .section-1 {
     height: auto;
     grid-template-columns: 1fr;
@@ -194,8 +205,6 @@ header .header-banner h1 {
   .section-1 .section-1-left {
     text-align: center;
     align-items: center;
-    padding: 25px;
-    margin-block: 50px;
     gap: 30px;
     order: 1;
   }
@@ -203,9 +212,13 @@ header .header-banner h1 {
     font-size: 35px;
   }
   .section-1 .section-1-right {
-    background-image: url("/images/mobile/image-transform.jpg");
     height: 315px;
     order: 0;
+  }
+}
+@media (max-width: 375px) {
+  .section-1 .section-1-right {
+    background-image: url("/images/mobile/image-transform.jpg");
   }
 }
 
@@ -217,6 +230,7 @@ header .header-banner h1 {
 .section-2 .section-2-left {
   background-image: url("/images/desktop/image-stand-out.jpg");
   background-size: cover;
+  background-position: center;
 }
 .section-2 .section-2-right {
   display: flex;
@@ -246,7 +260,13 @@ header .header-banner h1 {
 .section-2 .section-2-right a:hover {
   border-bottom: 7px solid hsl(7deg, 99%, 70%);
 }
-@media (max-width: 375px) {
+@media (max-width: 1024px) {
+  .section-2 .section-2-right {
+    padding: 25px;
+    margin-block: 50px;
+  }
+}
+@media (max-width: 768px) {
   .section-2 {
     height: auto;
     grid-template-columns: 1fr;
@@ -254,16 +274,18 @@ header .header-banner h1 {
   .section-2 .section-2-right {
     text-align: center;
     align-items: center;
-    padding: 25px;
-    margin-block: 50px;
     gap: 30px;
   }
   .section-2 .section-2-right h2 {
     font-size: 35px;
   }
   .section-2 .section-2-left {
-    background-image: url("/images/mobile/image-stand-out.jpg");
     height: 315px;
+  }
+}
+@media (max-width: 375px) {
+  .section-2 .section-2-left {
+    background-image: url("/images/mobile/image-stand-out.jpg");
   }
 }
 
@@ -275,6 +297,7 @@ header .header-banner h1 {
 .section-3 .section-3-left {
   background-image: url("/images/desktop/image-graphic-design.jpg");
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -293,6 +316,7 @@ header .header-banner h1 {
 }
 .section-3 .section-3-right {
   background-image: url("/images/desktop/image-photography.jpg");
+  background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -310,23 +334,31 @@ header .header-banner h1 {
   color: hsl(198deg, 62%, 26%);
   text-align: center;
 }
-@media (max-width: 375px) {
+@media (max-width: 1024px) {
+  .section-3 .section-3-left,
+.section-3 .section-3-right {
+    padding: 60px 25px;
+  }
+}
+@media (max-width: 768px) {
   .section-3 {
     height: auto;
     grid-template-columns: 1fr;
   }
+  .section-3 .section-3-left,
+.section-3 .section-3-right {
+    height: 600px;
+  }
+}
+@media (max-width: 375px) {
   .section-3 .section-3-left {
     background-image: url("/images/mobile/image-graphic-design.jpg");
-    height: 600px;
-    padding: 60px 25px;
   }
   .section-3 .section-3-left p {
     color: hsl(167deg, 40%, 24%);
   }
   .section-3 .section-3-right {
     background-image: url("/images/mobile/image-photography.jpg");
-    height: 600px;
-    padding: 60px 25px;
   }
 }
 
@@ -346,7 +378,8 @@ header .header-banner h1 {
 }
 .testimonials .testimonial-cards {
   margin-top: 85px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 .testimonials .testimonial-cards .card {
@@ -374,6 +407,16 @@ header .header-banner h1 {
   display: block;
   color: hsl(210deg, 4%, 67%);
 }
+@media (max-width: 1024px) {
+  .testimonials .testimonial-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .testimonials .testimonial-cards {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 375px) {
   .testimonials {
     padding-block: 70px;
@@ -382,9 +425,6 @@ header .header-banner h1 {
   .testimonials h2 {
     font-size: 18px;
     letter-spacing: 4px;
-  }
-  .testimonials .testimonial-cards {
-    flex-direction: column;
   }
   .testimonials .testimonial-cards .card {
     margin-bottom: 40px;
@@ -406,6 +446,7 @@ header .header-banner h1 {
 .image-galery .cone, .image-galery .sugar {
   height: 450px;
   background-size: cover;
+  background-position: center;
 }
 .image-galery .milk {
   background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
@@ -422,10 +463,18 @@ header .header-banner h1 {
 .image-galery img {
   width: 100%;
 }
-@media (max-width: 375px) {
+@media (max-width: 1024px) {
   .image-galery {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+@media (max-width: 768px) {
+  .image-galery .milk, .image-galery .orange,
+.image-galery .cone, .image-galery .sugar {
+    height: 300px;
+  }
+}
+@media (max-width: 375px) {
   .image-galery .milk, .image-galery .orange,
 .image-galery .cone, .image-galery .sugar {
     height: 187px;
