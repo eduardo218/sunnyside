@@ -8,9 +8,13 @@ header {
         justify-content: space-between;
         align-items: center;
         height: 135px;
-        padding-inline: 40px;        
+        padding-inline: 40px;  
+        
+        .menu-icon {
+            display: none;
+        }
 
-        .navbar-links {
+        #navbar-links {
             ul {
                 display: flex;
 
@@ -66,11 +70,74 @@ header {
             .logo img {
                 width: 120px;
             }
-        }
 
-        .navbar-links {
-            display: none;
-        }
+            .menu-icon {
+                display: block;
+            }
+
+            #navbar-links.hide {
+                display: none;
+            }
+
+            #navbar-links {
+                background-color: $white;
+                position: absolute;
+                left: 25px;
+                top: 100px;
+                width: calc(100% - 50px);               
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+
+                    &::before {
+                        content: " ";
+                        position: relative;
+                        margin-top: -20px;
+                        margin-left: auto;
+                        width: 0; 
+                        height: 0; 
+                        border-top: 20px solid transparent;
+                        border-bottom: 20px solid transparent; 
+                        
+                        border-right:20px solid $white; 
+                    }
+    
+                    li {    
+                        margin-left: 0;
+                        margin-top: 30px;
+
+                        &:last-child {
+                            margin-block: 60px;
+                        }
+
+                        a {
+                            color: $dark-grayish-blue;
+                        }
+    
+                        a.contact-button {
+                            text-transform: uppercase;
+                            font-family: $fraunces;
+                            color: #000;
+                            background-color: $yellow;
+    
+                            padding: 20px 30px;
+                            border-radius: 44px;
+    
+                            &:hover {
+                                background-color: #6fcffd;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+            }
+        }        
+
+        
 
         .header-banner {
             margin-top: 60px;
@@ -82,4 +149,3 @@ header {
             }
         }
     }
-}
